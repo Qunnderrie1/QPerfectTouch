@@ -3,11 +3,8 @@ import TitleCard from '../Components/TitleCard'
 const Contact = () => {
   return (
     <div className='contactContainer container-fluid'>
-        <div className='titleBackgroundCover'></div>
-        <TitleCard title="Contact"   />
         <div>
-         <h3 className='sectionsHeaderText'>Get Your Personalized Quote Today!</h3>
-         <p>Discover The Perfect Touch For Your Vehicle With A Customized Quote.</p>
+         <h3 className='sectionsHeaderText'>Contact Us</h3>
         <section className='contactUsSection container'>
             <form>
                 <div style={{ display: "flex" , gap: "20px"}}>

@@ -8,7 +8,7 @@ const Header = () => {
         <div className='backgroundCover1'></div>
         <header className='container'>
             <div className='headerTextBtnsContainer'><div>
-                <h1 className='headerText'>Discover the Perfect <span>Touch</span></h1>
+                <h1 className='headerText'>Discover The Perfect <span>Touch</span></h1>
                 <p className='subHeaderText'>Elevate Your Ride with Q Perfect Touch Auto Detailing.</p>
             </div>
             <div className='btnHeaderContainer'>

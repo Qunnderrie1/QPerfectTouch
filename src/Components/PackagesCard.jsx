@@ -48,10 +48,10 @@ const handleBook = () => {
         <div className='packageCardTitle'>
         <p className='packageHeaderText'>{title}</p>
         </div>
-    <div className='packageCardBodyMain'>
+    <div className='packageCardBodyMain '>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas natus praesentium optio in, errors!</p>
       <div className='packageCardBody'>
-      <p>SERVICES INCLUDED</p>
+      <p>SERVICE</p>
       <div onClick={handleDetails} className='openDetails'>
         <div className={showDetails ? "detail-line1 active" : "detail-line1"}></div>
         <div className={openShowPrices ? "detail-line2 active" : "detail-line2"}></div>
@@ -67,7 +67,7 @@ const handleBook = () => {
         </ul>
       </div>
       <div className='packageCardBody'>
-      <p>SERVICE PRICES</p>
+      <p>PRICE</p>
       <div onClick={handlePrices} className='openDetails'>
         <div className={openShowPrices ? "detail-line1 active" : "detail-line1"}></div>
         <div className={openShowPrices ? "detail-line2 active" : "detail-line2"}></div>

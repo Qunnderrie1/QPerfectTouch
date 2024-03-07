@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TitleCard from '../Components/TitleCard'
 
 const CustomerInformation = () => {
+
+
     const [appointmentTime , setAppointmentTime ] = useState("");
 
 
@@ -22,10 +24,6 @@ const CustomerInformation = () => {
 
 
 
-    const handleDateTime = () => {
-
-
-    }
 
     const handleSubmit = (e) => {
 
@@ -38,13 +36,11 @@ const CustomerInformation = () => {
 
     <div className='bookingContainer'>
         <div style={{width: "100%" , margin: "0px", padding: "0px"}}>
-        <div className='titleBackgroundCover'></div>
-        <TitleCard title="Schedule Appointment"  />
+            <p className="customerTitle" style={{marginTop: "100px", fontSize: "30px", }}>Customer Information</p>
         </div>
         <div className='customerContainer '>
-            <form onSubmit={handleSubmit} className='container'>
-            <p style={{textAlign: "left"}}>Customer Information</p>
-            <div className='customerInfo shadow-md'>
+            <form onSubmit={handleSubmit} className='bookForm container'>
+            <div className="customerInfo">
                 <div style={{ display: "flex" , gap: "20px"}}>
                 <div style={{ display: "flex" , gap: "20px",textAlign: "left"}} className='formNameContainer'>
                     <div style={{ display: "flex" , flexDirection: "column"}}>
@@ -68,7 +64,10 @@ const CustomerInformation = () => {
             <input type='text' className='form-control' />
             </div>
            </div>
-           <p style={{textAlign: "left"}}>Vehical Information</p>
+
+
+           <section className="vehicleContainer">
+           <p style={{marginTop: "40px", fontSize: "30px", }}>Vehicle Information</p>
             <div className='customerVehicalContainer shadow-md'>
             <div style={{ textAlign: "left", marginTop: "10px"}}>
             <label style={{ fontSize: "14px"}} htmlFor="emailaddress">Vehicle Year, Make & Model</label>
@@ -83,6 +82,10 @@ const CustomerInformation = () => {
             </select>
             </div>
             </div>
+           </section>
+
+
+            <section className="serviceOptionSection">
             <div style={{ textAlign: "left"}}>
             <select className='form-control'>
                 <option selected>Choose Your Service</option>
@@ -99,6 +102,12 @@ const CustomerInformation = () => {
                 <option value="Seat Shampoo" >Zelle</option>
             </select>
             </div>
+
+            </section>
+
+
+            <section className='appointmentDateTimeSection'>
+
             <div className='appointmentdatetime'> 
             <div style={{ textAlign: "left", display: "flex", flexDirection: "column"}}>
                 <label style={{ fontSize: "14px"}} htmlFor="emailaddress">Appointment Date </label>
@@ -111,8 +120,11 @@ const CustomerInformation = () => {
 
             </div>
             
-            <textarea type='textarea' className='form-control' placeholder='Notes....' />
-            <button onClick={handleDateTime} className='contactSubmitBtn'>BOOK APPOINTMENT</button>
+            </section>
+
+
+            {/* <textarea type='textarea' className='form-control' placeholder='Notes....' />  */}
+            <button  className='contactSubmitBtn'>NEXT</button>
             </form>
         </div>
         
