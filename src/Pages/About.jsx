@@ -2,9 +2,8 @@ import React from 'react'
 import TitleCard from '../Components/TitleCard'
 const About = () => {
   return (
-    <div>
-        <div className='titleBackgroundCover'></div>
-        <TitleCard title="About"  />
+    <div className='aboutPageMainContainer'>
+      <h4>About Us</h4>
         <div className='aboutPageContainer'>
           <div className='aboutText'>
           <p>Welcome to Q Perfect Touch, your premier destionation for specialized car seats and carpet shampooing, dedicated to delivering pristine interiors that redefine automotive luxury. Founded in Columbus, Georgia, our commitment to excellent stems from over three years of industry expertise.</p>

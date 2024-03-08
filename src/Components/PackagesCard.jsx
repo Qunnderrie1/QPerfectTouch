@@ -69,16 +69,12 @@ const handleBook = () => {
       <div className='packageCardBody'>
       <p>PRICE</p>
       <div onClick={handlePrices} className='openDetails'>
-        <div className={openShowPrices ? "detail-line1 active" : "detail-line1"}></div>
-        <div className={openShowPrices ? "detail-line2 active" : "detail-line2"}></div>
-      </div>
+      <li style={{listStyle:"none"}}>{price}</li>
 
       </div>
-      <div className={openShowPrices ? "serviceList active" : "serviceList"}>
-        <ul>
-          <li style={{listStyle:"none"}}>{price}</li>
-        </ul>
       </div>
+
+
     
             
     </div>

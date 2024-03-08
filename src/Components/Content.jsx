@@ -1,5 +1,10 @@
 import React from 'react'
 import car from '../Images/car.jpg'
+import carpic1 from '../Images/pic1.jpg'
+import carpic2 from '../Images/pic2.jpg'
+import carpic3 from '../Images/pic3.jpg'
+import carpic4 from '../Images/pic4.jpg'
+import carwash from '../Images/carwashpic.jpg'
 import seat from '../Images/pic5.jpg'
 import PackagesCard from './PackagesCard'
 import packages from '../Data/PackagesData.js'
@@ -39,10 +44,10 @@ const Content = () => {
         <section className='photoSection'>
 
         <div className='photoContainer container'>
-                <img src={car} width="300px" />
-                <img src={car} width="300px" />
-                <img src={car} width="300px" />
-                <img src={car} width="300px" />
+                <img src={carpic1} width="300px" />
+                <img src={carpic2} width="300px" />
+                <img src={carpic3} width="300px" />
+                <img src={carpic4} width="300px" />
         </div>
 
         </section>

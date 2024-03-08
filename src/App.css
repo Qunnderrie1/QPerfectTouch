@@ -57,9 +57,10 @@
 }
 
 .sectionsHeaderText{
-  padding: 40px;
+  padding: 10px;
+  color: #1f1f1f;
   margin-top: 80px;
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 700;
   text-align: center;
 
@@ -303,53 +304,16 @@ form h5{
   flex-wrap: wrap;
   width: 100%;
   position: relative;
+  font-size: 30px;
 
 }
 
 .aboutContent{
-  display: flex;
-  flex-direction: column;
-  width: 700px;
-
-}
-.aboutContainer img{
-  object-fit: contain;
-  max-width: 350px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 400;
 }
 
-.aboutContainer img::after{
-  content:'';
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  position: absolute;
-  top: -20px;
-}
-
-.aboutContainer a{
-  background-color: black;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  border: 1px solid #00ffcc;
-  width: 300px;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-
-  max-width: 150px;
-  text-align: center ;
-  padding: 10px;
-  transition: 0.4s;
-}
-.aboutContainer a:hover{
-  background-color: #00ffcc;
-  text-decoration: none;
-  color: rgb(15, 15, 15);
-  max-width: 150px;
-  text-align: center ;
-  padding: 10px;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
 
 /* ================= Contact Container ============================ */
 .titleBackgroundCover{
@@ -415,8 +379,17 @@ form h5{
 
 .photoSection img {
   width: 250px;
+  border: 1px solid #000;
+  transition: 0.4s;
+}
+.photoSection img:hover {
+  transform: scale(1.1);
 
 }
+
+
+
+
 .photoSection{
 
 }
@@ -908,6 +881,11 @@ footer button{
 
 /* ================= About Section ============================ */
 
+.aboutPageMainContainer h4{
+  font-size: 28px;
+  margin-top: 140px;
+
+}
 
 .aboutPageContainer{
 
@@ -917,6 +895,7 @@ footer button{
 .aboutText{
   text-align: center;
   padding: 0px 10px;
+  font-size: 24px;
 }
 
 
@@ -1075,7 +1054,7 @@ footer button{
   }
 
   .sectionsHeaderText {
-    font-size: 22px;
+    font-size: 34px;
   }
 
   .btnHeaderContainer{
