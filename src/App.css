@@ -227,7 +227,7 @@ header img {
 
 }
 
-form{
+/* form{
   height: 100%;
   display: flex;
   border-radius: 10px;
@@ -240,7 +240,9 @@ form{
   background-color: white;
   text-align: center;
 
-}
+} */
+
+
 form h5{
   font-weight: 600;
 
@@ -326,9 +328,6 @@ form h5{
   margin: 0px auto;
 
 
-}
-.bookForm{
-  height: 400px;
 }
 
 /* ================= Photo Container ============================ */
@@ -733,16 +732,13 @@ gap: 20px;
 }
 
 .bookingContainer{
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+
 
 }
 
 .bookingContainer form{
   max-width: 400px;
+  height: 300px;
 
 }
 

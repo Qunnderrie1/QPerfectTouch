@@ -7,8 +7,6 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
-import Cart from './Pages/Cart';
-import Booking from './Pages/CustomerInformation';
 import CustomerInformation from './Pages/CustomerInformation';
 
 function App() {
@@ -19,11 +17,11 @@ function App() {
       
        <Routes>
        <Route path='/QPerfectTouch' element={<Home />} />
-       <Route path='/services' element={<Services />} />
-       <Route path='/contact' element={<Contact />} />
-       <Route path='/about' element={<About />} />
+       <Route path='/QPerfectTouch/services' element={<Services />} />
+       <Route path='/QPerfectTouch/contact' element={<Contact />} />
+       <Route path='/QPerfectTouch/about' element={<About />} />
        {/* <Route path='/cart' element={<Cart />} /> */}
-       <Route path='/makeappointment' element={<CustomerInformation />} />
+       <Route path='/QPerfectTouch/makeappointment' element={<CustomerInformation />} />
       </Routes>
       <Footer />
 
