@@ -1,19 +1,15 @@
 {
   "files": {
     "main.css": "/QPerfectTouch/static/css/main.2df8c92f.css",
-    "main.js": "/QPerfectTouch/static/js/main.e8880859.js",
+    "main.js": "/QPerfectTouch/static/js/main.d3ac1110.js",
     "static/media/car.jpg": "/QPerfectTouch/static/media/car.693f428a58e02811659b.jpg",
     "static/media/carimage.jpg": "/QPerfectTouch/static/media/carimage.711b0998d31883d94de3.jpg",
-    "static/media/pic3.jpg": "/QPerfectTouch/static/media/pic3.b7d0db021088688eef5a.jpg",
-    "static/media/pic2.jpg": "/QPerfectTouch/static/media/pic2.9ea880fab3e9145efa34.jpg",
-    "static/media/pic4.jpg": "/QPerfectTouch/static/media/pic4.15fa8aa8f53df3478440.jpg",
-    "static/media/pic1.jpg": "/QPerfectTouch/static/media/pic1.f323ac43173a79681b8d.jpg",
     "index.html": "/QPerfectTouch/index.html",
     "main.2df8c92f.css.map": "/QPerfectTouch/static/css/main.2df8c92f.css.map",
-    "main.e8880859.js.map": "/QPerfectTouch/static/js/main.e8880859.js.map"
+    "main.d3ac1110.js.map": "/QPerfectTouch/static/js/main.d3ac1110.js.map"
   },
   "entrypoints": [
     "static/css/main.2df8c92f.css",
-    "static/js/main.e8880859.js"
+    "static/js/main.d3ac1110.js"
   ]
 }
