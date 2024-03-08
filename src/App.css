@@ -94,6 +94,7 @@ nav a{
   color: #00ffcc;
   transition: 0.3s;
   font-weight: 600;
+  font-size: 24px;
 }
 
 .nav-items a:hover{
@@ -125,6 +126,7 @@ nav a{
 
 .logoContainer a {
   color: #00ffcc;
+  font-size: 24px;
 }
 
 

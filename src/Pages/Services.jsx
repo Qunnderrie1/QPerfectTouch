@@ -1,6 +1,7 @@
 import React from 'react'
 import MenuCard from '../Components/MenuCard'
-
+import serviceMenuItems from '../Data/ServicesData'
+import services from '../Data/ServicesData'
 const Services = () => {
   return (
     <div className='servicesContainer'>
@@ -8,12 +9,11 @@ const Services = () => {
           <h3 className='serviceTitle'>Service Menu</h3>
           <hr />
           <div className='serviceMenuItems container'>
-            <MenuCard title="Full Interior Detail" description="" price="150" />
-            <MenuCard title="Seat Shampoo" price="100"  />
-            <MenuCard title="Carpet Shampoo" price="100"  />
-            <MenuCard  title="Car Wash" price="40" />
-            <MenuCard  title="Basic In & Out" price="25" />
-            <MenuCard  title="Basic In & Out" price="25" />
+            {
+              services.map((item) => {
+                return <MenuCard title={item.title} description={item.description} price={item.price} img={item.img} />
+              })
+            }
         </div>
 
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import car from '../Images/carpic7.jpg'
-const MenuCard = ({title, description, price}) => {
+const MenuCard = ({title, description, price, img}) => {
   return (
     <div className='servicesContent'>
-    <img src={car}  />
+    <img src={img}  />
     <h3>{title}</h3>
     <p>{description}</p>
     <p style={{ textAlign: "end"}}>Starting At ${price} </p>
