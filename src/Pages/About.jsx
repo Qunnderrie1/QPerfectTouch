@@ -1,5 +1,4 @@
 import React from 'react'
-import TitleCard from '../Components/TitleCard'
 const About = () => {
   return (
     <div className='aboutPageMainContainer'>

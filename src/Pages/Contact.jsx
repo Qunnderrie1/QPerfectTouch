@@ -31,13 +31,9 @@ const Contact = () => {
             <label style={{ fontSize: "14px"}} htmlFor="emailaddress">Phone</label>
             <input type='text' className='form-control' />
             </div>
-            <div style={{ textAlign: "left"}}>
-            <label style={{ fontSize: "14px"}} htmlFor="emailaddress">Vehicle Year, Make & Model</label>
-            <input type='text' className='form-control' />
-            </div>
             
-            <textarea type='textarea' className='form-control' placeholder='I would like to know more about your service...' />
-            <button className='contactSubmitBtn'> Submit</button>
+            <textarea type='textarea' className='form-control' placeholder='Message here....' />
+            <button className='contactSubmitBtn'>Submit</button>
             </form>
            
         </section>
