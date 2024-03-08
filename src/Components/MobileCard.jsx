@@ -1,7 +1,7 @@
 import React from 'react'
-import car from '../Images/car.jpg'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faComputer} from '@fortawesome/free-solid-svg-icons'
+
 const MobileCard = ({icon}) => {
   return (
     <div className='mobileContainer container'>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import check from '../Images/checkIcon.png'
+
 import { useNavigate } from 'react-router-dom'
 
 const PackagesCard = ({title ,serviceItems, price}) => {

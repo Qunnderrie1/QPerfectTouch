@@ -1,5 +1,4 @@
 :root{
-
  --backgroundColorPrimary : black;
  --backgroundColorHeaderCover : rgb(3, 29, 62, 0.4);
  --backgroundColorSecondary: rgb(222, 237, 255);
@@ -7,7 +6,6 @@
  --buttonTextColor:rgb(3, 29, 62, 0.4);
  --buttonBackColor:rgb(0, 232, 163);
  --textColorSecondary: rgb(0, 232, 163);
-
 }
 
 
@@ -134,7 +132,7 @@ nav a{
 
 .headerContainer{
   background-color: rgb(21, 21, 21);
-  background-image: url('./Images/carimage.jpg');
+  background-image: url('../public/images/carimage.jpg');
   background-size: cover;
   position: relative;
 
@@ -407,7 +405,7 @@ form h5{
   background-color: var(--backgroundColorPrimary);
   box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.4);
   border-radius: 8px;
-  background-image: url('./Images/car.jpg');
+  background-image: url('../public/images/car.jpg');
   background-size: cover;
   z-index: 1;
 

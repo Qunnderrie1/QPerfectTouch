@@ -5,7 +5,7 @@ const services = [
         description: "Shampoo seat with the quality products to give your seats a nice clean.",
         duration: "2hrs",
         price: 160,
-        img: "./carwashpic.jpg"
+        img: "../carimage.jpg"
     },
     {
         id:2,
@@ -13,7 +13,7 @@ const services = [
         description: "Shampoo seat with the quality products to give your seats a nice clean.",
         duration: "1hr",
         price: 40,
-        img: "./carwashpic.jpg"
+        img: "../public/carimage.jpg"
     },
     {
         id:3,
@@ -21,7 +21,7 @@ const services = [
         description: "Shampoo seat with the quality products to give your seats a nice clean.",
         duration: "1hr",
         price: 100,
-        img: "./carwashpic.jpg"
+        img: "../public/carimage.jpg"
     },
     {
         id:4,
@@ -29,7 +29,7 @@ const services = [
         description: "Shampoo seat with the quality products to give your seats a nice clean.",
         duration: "1hr",
         price: 100,
-        img: "./carwashpic.jpg"
+        img: "../public/carimage.jpg"
     },
     {
         id:5,
@@ -37,14 +37,14 @@ const services = [
         description: "Shampoo seat with the quality products to give your seats a nice clean.",
         duration: "30min",
         price: 25,
-        img: "./carwashpic.jpg"
+        img: "../public/carimage.jpg"
     }, {
         id:6,
         title: "Household Sofas",
         description: "Shampoo seat with the quality products to give your seats a nice clean.",
         duration: "1hr",
         price: 100,
-        img: "./carwashpic.jpg"
+        img: "../public/carimage.jpg"
     }
 ]
 

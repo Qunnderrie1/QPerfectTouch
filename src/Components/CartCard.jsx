@@ -1,5 +1,5 @@
 import React from 'react'
-import car  from '../Images/car.jpg'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 
@@ -17,7 +17,7 @@ const CartCard = ({id ,title , duration , description, price}) => {
 
     <div className='cartCardContainer'>
         <div className='cartCardImgContainer'>
-            <img src={car} width="100px" />
+            <img src='/images/car.jpg' width="100px" />
             <div className='titleCartCardContainer'>
                 <div>
                 <p>{title}</p>

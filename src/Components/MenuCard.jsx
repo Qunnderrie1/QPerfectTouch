@@ -7,6 +7,9 @@ const MenuCard = ({title, description, price, img}) => {
     <img src={img}  />
     <h3>{title}</h3>
     <p>{description}</p>
+    {
+        console.log(img)
+    }
     <p style={{ textAlign: "end"}}>Starting At ${price} </p>
   </div>
   )

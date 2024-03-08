@@ -46,7 +46,7 @@ const CustomerInformation = () => {
         }
 
         if(count == 4 ) {
-            setCount(1)
+            setCount(4)
         }
 
     }

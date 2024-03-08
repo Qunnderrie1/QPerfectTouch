@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link } from 'react-router-dom'
-import car from '../Images/car.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faClock} from '@fortawesome/free-solid-svg-icons'
 import { getItems , removeItems , addItems} from '../Slices/CartSlice'
@@ -17,7 +16,7 @@ const ServiceCard = ({title , description, duration , price}) => {
         <div className='card shadow-lg'>
         <div className='card-title'>
         <div className='backgroundCover'></div>
-            <img src={car} style={{ width: "250px"}}/>
+            <img src='/Images/car.jpg' style={{ width: "250px"}}/>
             <p>{title}</p>
         </div>
         <div className='card-body'>
