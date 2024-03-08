@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/QPerfectTouch/static/css/main.78561772.css",
-    "main.js": "/QPerfectTouch/static/js/main.00ec6ae2.js",
+    "main.css": "/QPerfectTouch/static/css/main.1c74ce21.css",
+    "main.js": "/QPerfectTouch/static/js/main.e05482da.js",
+    "static/media/carwashpic.jpg": "/QPerfectTouch/static/media/carwashpic.466bd3ea9531f9e97cc6.jpg",
     "static/media/rainpic.jpg": "/QPerfectTouch/static/media/rainpic.9a873b924219f658962e.jpg",
     "static/media/car.jpg": "/QPerfectTouch/static/media/car.693f428a58e02811659b.jpg",
     "static/media/carimage.jpg": "/QPerfectTouch/static/media/carimage.711b0998d31883d94de3.jpg",
+    "static/media/pic3.jpg": "/QPerfectTouch/static/media/pic3.b7d0db021088688eef5a.jpg",
+    "static/media/pic2.jpg": "/QPerfectTouch/static/media/pic2.9ea880fab3e9145efa34.jpg",
     "static/media/pic5.jpg": "/QPerfectTouch/static/media/pic5.c5cc99f4c8c095995f23.jpg",
+    "static/media/pic4.jpg": "/QPerfectTouch/static/media/pic4.15fa8aa8f53df3478440.jpg",
+    "static/media/pic1.jpg": "/QPerfectTouch/static/media/pic1.f323ac43173a79681b8d.jpg",
     "index.html": "/QPerfectTouch/index.html",
-    "main.78561772.css.map": "/QPerfectTouch/static/css/main.78561772.css.map",
-    "main.00ec6ae2.js.map": "/QPerfectTouch/static/js/main.00ec6ae2.js.map"
+    "main.1c74ce21.css.map": "/QPerfectTouch/static/css/main.1c74ce21.css.map",
+    "main.e05482da.js.map": "/QPerfectTouch/static/js/main.e05482da.js.map"
   },
   "entrypoints": [
-    "static/css/main.78561772.css",
-    "static/js/main.00ec6ae2.js"
+    "static/css/main.1c74ce21.css",
+    "static/js/main.e05482da.js"
   ]
 }
