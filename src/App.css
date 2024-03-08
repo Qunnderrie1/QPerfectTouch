@@ -20,36 +20,6 @@
 
 }
 
-
-.titleContainer{
-  background-color: var(--backgroundColorPrimary);
-  background-image: url('./Images/rainpic.jpg');
-  background-size: cover;
-  height: 30vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-}
-
-.titleContainer h4 {
-   color: #00ffcc;
-  padding: 40px 0px 0px 0px;
-  font-weight: 700;
-  font-size: 32px;
-  animation: moveTitleText 1.2s alternate;
-  z-index: 2;
-}
-
-.titleContainer p {
-  color: white;
-  font-size: 30px;
-  z-index: 1;
-}
-
 .homeContainer{
   display: flex;
   flex-direction: column;
@@ -63,6 +33,7 @@
   font-size: 40px;
   font-weight: 700;
   text-align: center;
+  margin-top: 150px;
 
 }
 /* ================= NavBar Container ============================ */
@@ -653,13 +624,48 @@ form h5{
 
 .servicesCardSection h3{
   font-weight: 700;
+  font-size: 34px;
+
 }
 
+.serviceMenuItems{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.servicesContent{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;;
+  z-index: 3;
+  border: 1px solid #9e9e9e;
+}
+
+.servicesContent h3{
+  margin-top: 10px;
+}
+
+.servicesContent img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+
 .fullInteriorContainer, .seatShampooContainer, .carpetshampooContainer, .BasicInOutContainer{
-  border: #444444 1px solid;
-  padding: 20px;
-  border-radius: 8px;
+  height: 500px;
   box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.2);
+  color: rgb(28, 28, 28);
+  position: relative;
+  text-align: center;
+  z-index: 0;
+  
 }
 
 /* ================= Service Card Section ============================ */
@@ -707,12 +713,14 @@ form h5{
 .servicesCardSection{
 padding-top: 100px;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 flex-wrap: wrap;
 gap: 20px;
 
 }
+
+
 /* ================= Customer Information Container ============================ */
 
 .customerContainer{
@@ -882,7 +890,7 @@ footer button{
 /* ================= About Section ============================ */
 
 .aboutPageMainContainer h4{
-  font-size: 28px;
+  font-size: 34px;
   margin-top: 140px;
 
 }

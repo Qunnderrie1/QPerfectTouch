@@ -1,6 +1,6 @@
 const packages = [
     {
-        title: "Full Interior",
+        title: "Full Interior Detail",
         duration: "2hrs",
         serviceItems: ["Seat Shampoo", "Carpet Shampoo", "Vaccum", "Door Panels", "Arm Rest Area", "Cup Holders", "Dashboard"],
         price: 160,

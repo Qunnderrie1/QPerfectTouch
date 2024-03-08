@@ -3,7 +3,7 @@ import Stars from './Stars'
 
 const TestimonyCard = ({name, testimony}) => {
   return (
-    <div className='testimonyCustomerContainer shadow-lg'>
+    <div className='testimonyCustomerContainer shadow-md'>
     <div className='testimonyTitleContainer'>
     <i><p>{name}</p></i>
     <Stars />
