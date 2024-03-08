@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       
        <Routes>
-       <Route path='/' element={<Home />} />
+       <Route path='/QPerfectTouch' element={<Home />} />
        <Route path='/services' element={<Services />} />
        <Route path='/contact' element={<Contact />} />
        <Route path='/about' element={<About />} />

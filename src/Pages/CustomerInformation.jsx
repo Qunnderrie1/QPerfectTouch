@@ -3,8 +3,10 @@ import TitleCard from '../Components/TitleCard'
 
 const CustomerInformation = () => {
 
+    const [count , setCount] = useState(0);
+    const [titleName , setTitleName] = useState("Customer Information")
 
-    const [appointmentTime , setAppointmentTime ] = useState("");
+    const [appointmentTime, setAppointmentTime] = useState("")
 
 
     const [customer , setCustomer] = useState( {
@@ -12,7 +14,6 @@ const CustomerInformation = () => {
         last: "",
         address: "",
         phone: "",
-        vehicleYearMakeMode: "",
         vehicleType: "",
         Service: "",
         paymentType: "",
@@ -22,7 +23,43 @@ const CustomerInformation = () => {
         
     })
 
+    const handleSteps = () => {
+        setCount(count + 1)
 
+        switch(count){
+            case 0:
+                setTitleName("Vehicle Information")
+                break;
+
+
+            case 1:
+                setTitleName("Choose Service")
+    
+                break;
+
+
+            case 2:
+                setTitleName("Appointment Date & Time")
+                 break;
+
+            
+        }
+
+        if(count == 4 ) {
+            setCount(1)
+        }
+
+    }
+
+
+    const handleCustomer = (e) => {
+
+
+        const { name , value } = e.target
+        setCustomer(prevData => ({...prevData,  [name] : value}))
+
+        console.log(customer)
+    }
 
 
     const handleSubmit = (e) => {
@@ -34,24 +71,25 @@ const CustomerInformation = () => {
   return (
 
 
-    <div className='bookingContainer'>
-        <div style={{width: "100%" , margin: "0px", padding: "0px"}}>
-            <p className="customerTitle" style={{marginTop: "100px", fontSize: "30px", }}>Customer Information</p>
+    <div className='bookingContainer container'>
+        <div style={{width: "100%" , padding: "0px"}}>
+            <p className="customerTitle" style={{marginTop: "180px", fontSize: "34px", }}>{titleName}</p>
         </div>
-        <div className='customerContainer '>
+        <div className='customerContainer container '>
             <form onSubmit={handleSubmit} className='bookForm container'>
-            <div className="customerInfo">
+
+            <div className={count == 0 ? "customerInfo active" : "customerInfo"}>
                 <div style={{ display: "flex" , gap: "20px"}}>
                 <div style={{ display: "flex" , gap: "20px",textAlign: "left"}} className='formNameContainer'>
                     <div style={{ display: "flex" , flexDirection: "column"}}>
                     <label style={{ fontSize: "14px", marginBottom: "5px"}} htmlFor="emailaddress">First</label>
-                <input type='text' className='form-control'  />
+                <input type='text' className='form-control' onChange={handleCustomer} value={customer.first}    />
                 </div>
                 </div>
                 <div style={{ display: "flex" , gap: "20px",textAlign: "left"}} className='formNameContainer'>
                     <div style={{ display: "flex" , flexDirection: "column"}}>
                     <label style={{ fontSize: "14px" , marginBottom: "5px"}} htmlFor="emailaddress">Last</label>
-                <input type='text' className='form-control' />
+                <input type='text' className='form-control' value={customer.last} />
                 </div>               
                 </div>
                 </div>
@@ -65,14 +103,8 @@ const CustomerInformation = () => {
             </div>
            </div>
 
-
-           <section className="vehicleContainer">
-           <p style={{marginTop: "40px", fontSize: "30px", }}>Vehicle Information</p>
-            <div className='customerVehicalContainer shadow-md'>
-            <div style={{ textAlign: "left", marginTop: "10px"}}>
-            <label style={{ fontSize: "14px"}} htmlFor="emailaddress">Vehicle Year, Make & Model</label>
-            <input type='text' className='form-control' />
-            </div>
+           <section className={count == 1 ? "vehicleContainer active container" : "vehicleContainer"}>
+            <div className='customerVehicalContainer container shadow-md'>
             <div style={{ textAlign: "left", marginTop: "20px"}}>
             <select className='form-control'>
                 <option selected>Choose Vehicle Type</option>
@@ -85,16 +117,20 @@ const CustomerInformation = () => {
            </section>
 
 
-            <section className="serviceOptionSection">
-            <div style={{ textAlign: "left"}}>
+            <section className={count == 2 ? "chooseServiceSection active": "chooseServiceSection"}>
+           <div style={{ textAlign: "left"}}>
             <select className='form-control'>
                 <option selected>Choose Your Service</option>
-                <option value="Full Interior Detail" >Full Interior Detail $180</option>
-                <option value="Seat Shampoo" >Seat Shampoo $100</option>
-                <option value="Carpet Shampoo" >Carpet Shampoo $100</option>
-                <option value="Basic In & Out" >Basic In & Out $40</option>
+                <option value="Full Interior Detail" >Full Interior Detail $180 | 2hrs</option>
+                <option value="Seat Shampoo" >Seat Shampoo $100 | 1hr</option>
+                <option value="Carpet Shampoo" >Carpet Shampoo $100 | 1hr</option>
+                <option value="Basic In & Out" >Basic In & Out $40 | 1hr</option>
             </select>
             </div>
+            </section>
+
+{/* 
+            <section className={count == 2 ? "serviceOptionSection active" : "serviceOptionSection"}>
             <div style={{ textAlign: "left"}}>
             <select className='form-control'>
                 <option selected>Payment Type</option>
@@ -103,28 +139,32 @@ const CustomerInformation = () => {
             </select>
             </div>
 
-            </section>
+            </section> */}
 
-
-            <section className='appointmentDateTimeSection'>
-
-            <div className='appointmentdatetime'> 
-            <div style={{ textAlign: "left", display: "flex", flexDirection: "column"}}>
+            <section className={count == 3 ?  "appointmentDateTimeSection active" : "appointmentDateTimeSection"}>
+            <div  style={{ textAlign: "left", display: "flex", flexDirection: "column"}}>
                 <label style={{ fontSize: "14px"}} htmlFor="emailaddress">Appointment Date </label>
                 <input type='date'  />
             </div>
-            <div style={{ textAlign: "left", display: "flex", flexDirection: "column"}}>
+            </section>
+
+        <section className={count == 3 ?  "appointmentDateTimeSection active" : "appointmentDateTimeSection"}>
+        <div style={{ textAlign: "left", display: "flex", flexDirection: "column"}}>
                 <label style={{ fontSize: "14px"}} htmlFor="emailaddress">Appointment Time </label>
-                <input onChange={(e) => setAppointmentTime(e.target.value)} value={appointmentTime} type='time' />
+                <select>
+                    <option>9:00am - 11:00am</option>
+                    <option>12:00am - 1:00am</option>
+                    <option>3:00am - 5:00am</option>
+                </select>            
             </div>
 
-            </div>
-            
-            </section>
+
+        </section>
+ 
 
 
             {/* <textarea type='textarea' className='form-control' placeholder='Notes....' />  */}
-            <button  className='contactSubmitBtn'>NEXT</button>
+            <button onClick={handleSteps}  className='contactSubmitBtn'>NEXT</button>
             </form>
         </div>
         

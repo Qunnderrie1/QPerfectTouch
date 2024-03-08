@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
         <div className={ mobileNav ? "mobileItems active" : "mobileItems"}>
             <div style={{ display:  "flex", flexDirection: "column", gap: "20px"}}>
-            <Link onClick={handleLinkClick} to='/' >Home</Link>
+            <Link onClick={handleLinkClick} to='/QPerfectTouch' >Home</Link>
             <Link onClick={handleLinkClick} to='/services' >Services</Link>
             <Link onClick={handleLinkClick} to='/contact' >Contact</Link>
             <Link onClick={handleLinkClick} to='/about' >About</Link>
@@ -58,15 +58,14 @@ const Navbar = () => {
             <Link to='/'>Q Perfect Touch</Link>
         </div>
         <div className='nav-items'>
-            <Link to='/' >Home</Link>
+            <Link to='/QPerfectTouch' >Home</Link>
             <Link to='/services' >Services</Link>
             <Link to='/contact' >Contact</Link>
             <Link to='/about' >About</Link>
         </div>
-        {/* <div className='cartNavContainer'>
-            <Link to='/cart'><FontAwesomeIcon icon={faCartShopping} />  </Link>
-            <p>{items.length}</p>
-        </div> */}
+        <div className='cartNavContainer'>
+            <Link to='/makeappointment'>Book Appointment</Link>
+        </div>
     </div>
 
     </nav>

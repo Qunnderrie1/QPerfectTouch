@@ -1,5 +1,6 @@
 import React from 'react'
-import car from '../Images/carpic7.jpg'
+
+
 const MenuCard = ({title, description, price, img}) => {
   return (
     <div className='servicesContent'>
