@@ -36,6 +36,8 @@ const Content = () => {
         <section className='aboutContainer container'>
             <div className='aboutContent'>
             <p>At Q Perfect Touch, we pride oursleves on setting the standards for high-quality auto detailing. Our unwavering commitment to excellence ensures that every vehicle we touch recevices meticulous attention to detail, tranforming it into a masterpiece on wheels. With a passion for perfection and a dedication to customer satisfaction, our team of skilled professional utilizes state-of-the-art techniques and premuim products to achieve impeccable results.</p>
+            <iframe  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F165854822929106%2F&show_text=false&width=267&t=0" width="100%" height="800" style={{border:"none",overflow:"hidden", margin: "80px 0px"}}  frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
             </div>
         </section>
 
@@ -51,6 +53,12 @@ const Content = () => {
         </div>
 
         </section>
+
+
+        {/* <section className='videosSection'>
+            <h4>Our Videos</h4>
+        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F165854822929106%2F&show_text=false&width=267&t=0" width="800" height="800" style={{border:"none",overflow:"hidden"}}  frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </section> */}
 
         
         <h3 className='sectionsHeaderText'>Our Services</h3>
