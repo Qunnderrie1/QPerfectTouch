@@ -7,9 +7,18 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
-import CustomerInformation from './Pages/CustomerInformation';
+import BookAppointment from './Pages/BookAppointment';
+import ServiceDetail from './Pages/ServiceDetail';
+import { useParams } from 'react-router-dom';
+import NotFound from './Pages/NotFound';
 
 function App() {
+
+  let  { id }  = useParams();
+
+  console.log(id)
+
+
   
   return (
     <div className="App container-fluid">
@@ -21,7 +30,11 @@ function App() {
        <Route path='/QPerfectTouch/contact' element={<Contact />} />
        <Route path='/QPerfectTouch/about' element={<About />} />
        {/* <Route path='/cart' element={<Cart />} /> */}
-       <Route path='/QPerfectTouch/makeappointment' element={<CustomerInformation />} />
+       <Route path='/QPerfectTouch/book' element={<BookAppointment />} />
+       <Route path={`service/${id}`} element={<ServiceDetail />} />
+       <Route path="*" element={<NotFound />} />
+
+
       </Routes>
       <Footer />
 

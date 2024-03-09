@@ -11,7 +11,7 @@ const Header = () => {
                 <p className='subHeaderText'>Elevate Your Ride with Q Perfect Touch Auto Detailing.</p>
             </div>
             <div className='btnHeaderContainer'>
-                <Link to="/makeappointment" >Book Appointment</Link>
+                <Link to="/QPerfectTouch/book" >Book Appointment</Link>
             </div>
             </div>
         </header>
