@@ -1,0 +1,534 @@
+.App {
+  text-align: center;
+  font-family: "Anta", sans-serif;
+}
+
+:root{
+
+  --navTextColor: rgb(0, 0, 0);
+  --navContactColor: rgb(229, 39, 5);
+  --heroButtonBackground:rgb(0, 76, 240);
+  --heroTextColor: rgb(231, 231, 231);
+  --titleSpanColor:rgb(0, 76, 240);
+}
+
+
+
+
+/*------------------ Mobile Nav Section ------------- */
+
+.mobileNavContainer{
+  display: none;
+}
+  
+
+
+
+
+
+/*------------------ Desktop Nav Section ------------- */
+
+nav{
+  background-color: rgb(0, 0, 0);
+
+}
+
+.navContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  height: 100px;
+}
+
+.nav-items{
+  display: flex;
+  gap: 20px;
+  margin: auto;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navHeroContainer{
+  background-color: black;
+  height: fit-content;
+  background-image: url('../public/Images/car1.jpg');
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.contactContaineer{
+  position: relative;
+}
+.cartItemsCountText{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  margin-left: 14px;
+
+}
+
+
+.sectionTitle{
+  font-size: 34px;
+  font-weight: bold;
+}
+
+
+
+
+/*------------------ Hero Section ------------- */
+
+
+.heroContainer{
+ 
+}
+
+
+.backgroundCover{
+  background-color: rgb(0, 0, 0,0.9);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.heroContent{
+  height: fit-content;
+  color: var(--heroTextColor);
+  z-index: 3;
+  text-align: left;
+  padding: 100px 0px;
+
+
+}
+.heroContent h1{
+  margin: 0px;
+  font-size: 60px;
+  font-weight: bold;
+  animation: moveHeroTitle 2s alternate;
+}
+
+.heroContent span{
+  color: var(--titleSpanColor);
+}
+
+.subTitleText{
+  font-size: 18px;
+  margin-top: 40px;
+  animation: moveHeroSubTitle 3s alternate;
+}
+
+.heroButtonsContainer .bookBtn{
+  background-color: var(--heroButtonBackground);
+  color: rgb(255, 255, 255);
+  border: none ;
+  padding: 16px;
+  margin-top: 40px;
+
+
+}
+
+
+
+
+
+
+/*------------------ Content Section ------------- */
+
+.contentContainer{
+  height: fit-content;
+}
+
+
+
+.serviceContainer{
+  margin: 100px 0px;
+  width: 100%;
+}
+
+.card{
+  background-image: url('../public/Images/car1.jpg');
+  background-size: cover;
+  width: 400px;
+  transition: 0.3s;
+  height: 400px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.serviceCardLine{
+  width: 80%;
+  height: 10px;
+  background-color: rgb(0, 76, 240);
+  transform: skewX(-20deg);
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+}
+
+.backgroundCardCover{
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.cardTitleText{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  bottom: 40px;
+  font-size: 30px;
+}
+.serviceBookBtn{
+  width: 100%;
+}
+
+.detailingCardContainer{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+
+
+
+.whyChooseUsContainer{
+  margin: 100px 0px;
+}
+
+.whyChooseUsText{
+  font-size: 24px;
+  margin: 40px 0px ;
+}
+
+
+
+
+
+
+
+.howBookingWorksContainer{
+  margin-top: 100px;
+}
+
+
+/*------------------ About Section ------------- */
+
+.aboutSection{
+  margin-top: 100px;
+}
+
+.aboutContent{
+  text-align: left;
+}
+.aboutContent h3{
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.aboutText{
+  font-size: 24px;
+  margin-top: 20px;
+  line-height: 48px;
+
+}
+
+
+.aboutSection img{
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.pageTitleContainer{
+  display: flex;
+  background-image: url('../public/Images/car1.jpg');
+  background-size: cover;
+  height: 700px;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.pageTextContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.pageTextContainer h3{
+  font-size: 46px;
+  font-weight: bold;
+}
+.pageTitleBackgroundCover{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,0.7);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+/*------------------ Get Quote Section ------------- */
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 500px;
+}
+.quoteContainer{
+  margin: 150px auto;
+  border: 1px solid black;
+  max-width: 400px;
+  padding: 40px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.2);
+}
+textarea{
+  height: 150px;
+  resize: none;
+}
+
+.quoteBtn{
+  background-color: var(--heroButtonBackground);
+  border: none;
+  padding: 10px;
+  color: white;
+}
+
+
+
+
+/*------------------ Contact Us Section ------------- */
+
+.locationContainer{
+
+  width: 100%;
+
+}
+
+
+
+
+/*------------------ Footer Section ------------- */
+
+
+footer{
+  color:white;
+  margin-top: 100px;
+  padding: 40px;
+  background-color: black;
+}
+
+
+
+
+
+/*------------------ Mobile Responsive Section ------------- */
+
+
+@media screen and (max-width: 775px ) {
+
+  .App{
+    overflow:hidden;
+  }
+
+  .heroContent{
+    text-align: center;
+    overflow-x: hidden;
+    padding-top: 40px;
+
+  }
+
+
+  .menuBarContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 8px;
+  }
+    
+  .line1{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+  
+  }
+  .line2{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .line3{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  
+
+
+  .mobileNavContainer{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    background-color: black;
+    z-index: 4;
+
+  }
+
+  .menuBarContainer{
+    padding: 10px;
+    height: fit-content;
+    max-width: fit-content;
+    
+  }
+
+  .cartNavContainer{
+    position: absolute;
+    right: 40px;
+  }
+  .cartItemsCountText{
+    margin: -35px 0px 0px 18px;
+  }
+
+  .navContainer{
+    display: none;
+  }
+  
+  .line1.active{
+    transform: rotate(45deg);
+    margin-top: 14px;
+  }
+  .line3.active{
+  transform: rotate(-45deg);
+  margin-top: -12px;
+  }
+  .line2.active{
+    display: none;
+  }
+.mobileNavMenuItems{
+  display: none;
+}
+.mobileNavMenuItems a{
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+.mobileNavMenuItems.active{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+  height: 100vh;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  animation: moveMobileNav 1s alternate;
+  z-index: 10;
+
+}
+
+.bookBtn{
+  background-color: grey;
+  border: none;
+  padding: 14px;
+}
+
+.aboutContent{
+  text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+/*------------------ Animation  Section ------------- */
+
+
+
+@keyframes moveHeroTitle {
+
+  0%{
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  
+}
+
+@keyframes moveHeroSubTitle {
+
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+}
+
+
+
+
+@keyframes moveMobileNav {
+
+  0%{
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+    
+}
+
