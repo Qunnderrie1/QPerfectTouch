@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/QPerfectTouch/static/css/main.8f1299d5.css",
+    "main.js": "/QPerfectTouch/static/js/main.da8c7483.js",
+    "static/media/car1.jpg": "/QPerfectTouch/static/media/car1.b6ae52decb0e368ad38a.jpg",
+    "index.html": "/QPerfectTouch/index.html",
+    "main.8f1299d5.css.map": "/QPerfectTouch/static/css/main.8f1299d5.css.map",
+    "main.da8c7483.js.map": "/QPerfectTouch/static/js/main.da8c7483.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f1299d5.css",
+    "static/js/main.da8c7483.js"
+  ]
+}
