@@ -6,8 +6,8 @@ const Portfolio = () => {
          <div className="pageTitleContainer">
         <div className="pageTitleBackgroundCover"></div>
         <div className="pageTextContainer container">
-          <h2>Q PERFECT MOBILE DETAILING</h2>
-          <h3>OUR WORK</h3>
+          <h2 className="pageTitle" >Q PERFECT MOBILE DETAILING</h2>
+          <h3 className="pageSubTitle">Our Work</h3>
         </div>
       </div>
     </div>

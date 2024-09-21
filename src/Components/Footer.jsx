@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-        Footer
+        Q Perfect Touch Detail &copy; 2024 All Rights reserved. Powered by BeyondLogiX
         </footer>
   )
 }

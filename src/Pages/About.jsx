@@ -6,8 +6,8 @@ const About = () => {
       <div className="pageTitleContainer">
         <div className="pageTitleBackgroundCover"></div>
         <div className="pageTextContainer container">
-          <h2>Q PERFECT MOBILE DETAILING</h2>
-          <h3>Your Car, Our Expertise – Mobile Detailing at Its Best</h3>
+          <h2 className="pageTitle">About Us</h2>
+          <h3 className="pageSubTitle">Learn More About Q Perfect Touch Mobile Detailing</h3>
         </div>
       </div>
       <div className="aboutContent container">

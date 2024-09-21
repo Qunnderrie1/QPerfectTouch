@@ -12,6 +12,7 @@ import Portfolio from './Pages/Portfolio';
 import MobileNav from './Components/MobileNav';
 import Cart from './Pages/Cart';
 import QuoteForm from './Components/QuoteForm';
+import Services from './Pages/Services';
 
 function App() {
   return (

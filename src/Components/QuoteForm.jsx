@@ -14,7 +14,13 @@ const QuoteForm = () => {
   const getQuote = () => {
     
     axios.post("/booking" , {
-    })
+      vehicle: vehicle,
+      Name: name,
+      Phone: phone,
+      Service: service,
+      Message: message
+    } )
+
   }
     
   const handleSubmit = (e) => {
@@ -29,6 +35,7 @@ const QuoteForm = () => {
 
     <div className='quoteForm container'>
     <h3 className='sectionTitle'>GET A QUOTE</h3>
+    <p className='sectionSubTitle'>Fill Out The Form Below To Get Your Quote Today.</p>
 
     <form method='POST' onSubmit={handleSubmit}>
       <input onChange={(e) => setVehicle(e.target.value)} className='form-control' name='vehileInfo' placeholder='Vehicle (Make / Model / Year '  />

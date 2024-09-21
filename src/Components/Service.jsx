@@ -6,13 +6,14 @@ const Service = () => {
     <section className='serviceContainer'>
 
     <div className='serviceContent container'>
-    <h3 className='sectionTitle'>DETAILING SERVICES</h3>
+    <h3 className='sectionTitle'>Our Most Featured Services</h3>
     <p className='sectionSubTitle'>Select from Our Range of Detailing Services Below</p>
     <div className='detailingCardContainer'>
         {
             data ? data.map((item) => {
                 return <ServiceCards
-                id={item.id}
+                 img={item.img}
+                 id={item.id}
                  title={item.name}
                  description={item.description}
                  price={item.price}
