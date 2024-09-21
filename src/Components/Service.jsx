@@ -7,6 +7,7 @@ const Service = () => {
 
     <div className='serviceContent container'>
     <h3 className='sectionTitle'>DETAILING SERVICES</h3>
+    <p className='sectionSubTitle'>Select from Our Range of Detailing Services Below</p>
     <div className='detailingCardContainer'>
         {
             data ? data.map((item) => {
