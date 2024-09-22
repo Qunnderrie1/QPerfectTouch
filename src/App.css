@@ -32,7 +32,7 @@
 
 nav{
   background-color: rgb(0, 0, 0);
-  border-bottom: 1px solid white;
+  
 
 }
 
@@ -53,13 +53,14 @@ nav{
 .nav-items a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
 }
+
 
 .navHeroContainer{
   background-color: black;
   height: fit-content;
-  background-image: url('../public/Images/car1.jpg');
+  background-image: url('../public/heroImage.jpg');
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -82,12 +83,13 @@ nav{
 
 .pageSubTitle{
   animation: movepageSubTitle 2s alternate  ;
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 40px;
+  font-weight: bold;
 }
 .pageTitle{
   animation: movepageSubTitle 2s alternate  ;
-  font-size: 40px;
+  font-size: 16px;
+  font-weight: lighter;
 }
 /*------------------ Hero Section ------------- */
 
@@ -189,52 +191,53 @@ nav{
   font-size: 36px;
 }
 .card{
-
-  background-size: cover;
   width: 300px;
   transition: 0.3s;
-  height: 600px;
-  color: white;
+  height: 450px;
+  color: rgb(0, 0, 0);
   position: relative;
   z-index: 2;
   border-radius: 0px;
-  cursor: pointer;
   border: 1px solid white;
 }
-
-.serviceCardLine{
-  width: 80%;
-  height: 10px;
-  background-color: rgb(0, 76, 240);
-  transform: skewX(-20deg);
+.card button{
+  background-color: var(--heroButtonBackground);
+  color: white;
+  border:none;
+  padding: 4px;
+  width: 100%;
+  margin-top: 4px;
 }
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+.card-img:hover{
+  transform: scale(1.02);
+}
+
 .card-body{
   display: flex;
   flex-direction: column;
-  justify-content: end;
 
-}
 
-.backgroundCardCover{
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: 0px;
-  z-index: -1;
 }
 
 .cardTitleText{
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: bold;
   font-size: 18px;
-  text-align: left;
+  text-align: center;
   bottom: 40px;
-  font-size: 24px;
+  font-size: 20px;
 }
 .serviceBookBtn{
   width: 100%;
 }
+
 
 .detailingCardContainer{
   margin-top: 100px;
@@ -252,6 +255,8 @@ nav{
 
 .whyChooseUsContainer{
   margin: 100px 0px;
+  background-color: rgb(10, 10, 10);
+  padding: 40px;
 
 }
 .whyChooseUs{
@@ -259,11 +264,26 @@ nav{
 
 
 }
+.whyChooseUsTitle{
+  text-align: left;
+  font-size: 34px;
+}
 .whyChooseUsText{
-  font-size: 20px;
+  font-size: 18px;
   margin: 40px 0px ;
   line-height: 55px;
   font-weight: lighter;
+  text-align: left;
+}
+.whyChooseUsContent{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.whyChooseUsImage{
+  object-fit: contain;
+  max-width: 400px;
 }
 
 
@@ -292,7 +312,7 @@ nav{
 
 
 .aboutText{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: lighter;
   margin-top: 20px;
   line-height: 48px;
@@ -309,7 +329,7 @@ nav{
 
 .pageTitleContainer{
   display: flex;
-  background-image: url('../public/Images/car1.jpg');
+  background-image: url('../public/car1.jpg');
   background-size: cover;
   height: 250px;
   color: white;
@@ -398,7 +418,6 @@ textarea{
   display: flex;
   height: fit-content;
   min-width: 200px;
-  position: relative;
 }
 
 .detailDescriptionContainer{
@@ -426,8 +445,6 @@ textarea{
   background-color: var(--heroButtonBackground);
   color:white;
   border: none;
-  position: absolute;
-  bottom: 0px;
 }
 
 
@@ -452,6 +469,25 @@ footer{
 
 /*------------------ Mobile Responsive Section ------------- */
 
+
+@media screen and (max-width: 1000px ) {
+
+  .whyChooseUsContent{
+    flex-direction: column;
+  }
+  .whyChooseUsContainer{
+    justify-content: center;
+  }
+  .whyChooseUsTitle{
+    text-align: center;
+  }
+  .whyChooseUsText{
+    text-align: center;
+  }
+
+
+
+}
 
 @media screen and (max-width: 775px ) {
 
@@ -596,6 +632,20 @@ footer{
 .detailDescriptionContainer{
   margin: 0px 0px 0px 0px;
   padding: 0px;
+}
+
+.whyChooseUsContent{
+  flex-direction: column;
+  justify-content: center;
+}
+.whyChooseUsContainer{
+  justify-content: center;
+}
+.whyChooseUsTitle{
+  text-align: center;
+}
+.whyChooseUsText{
+  text-align: center;
 }
 }
 

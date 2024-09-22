@@ -44,7 +44,7 @@ const QuoteForm = () => {
       <input onChange={(e) => setPhone(e.target.value)} className='form-control' name='cutsomerPhoneNumber' placeholder='Phone Number '  />
       <input onChange={(e) => setService(e.target.value)} className='form-control' name='customerServiceRequest' placeholder='What Service Do You Want Quoted?'  />
       <textarea onChange={(e) => setMessage(e.target.value)} className='form-control' name='customerMessage' placeholder='Message'  />
-      <button onClick={getQuote} className='quoteBtn'>Send</button>
+      <button style={{marginTop: "50px"}} onClick={getQuote} className='quoteBtn'>Send</button>
       
 
     </form>

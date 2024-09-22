@@ -1,7 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import data from '../Data'
-import seat from '../Images/seats1.jpg'
 const Detail = () => {
 
   const { id } = useParams();
@@ -26,29 +25,19 @@ const Detail = () => {
       }
 
       <div className='detailPriceContainer'>
-        {
-          data.map((item) => {
-            if(item.id == id){
-              return <div>
-                <h3 className='detailPriceText'>{item.name} Package - Price ${item.price}</h3>
-                   </div>
-            }
-          })
-        }
 
         <div className='detailContent container'>
           <div className='detailImgContainer'>
-          <img src={seat} width="600px"></img>
           </div>
           <div className='detailDescriptionContainer'>
             {
               data.map((item) => {
                 if(item.id == id){
                   return <div className='descriptionContent'>
-                    <p className='detailDescriptionTitle'>{item.name}</p>
+                    <p className='detailDescriptionTitle'>{item.subTitle}</p>
                     <hr />
                     <p>{item.description}</p>
-                    <button className='detailBookNowBtn'>Book Now!</button>
+                    <img src={item.imgURL} width="100%" height="100%" />
                        </div>
                 }
               })

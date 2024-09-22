@@ -9,9 +9,7 @@ import NavBar from './Components/NavBar';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Portfolio from './Pages/Portfolio';
-import MobileNav from './Components/MobileNav';
 import Cart from './Pages/Cart';
-import QuoteForm from './Components/QuoteForm';
 import Services from './Pages/Services';
 
 function App() {
@@ -20,8 +18,9 @@ function App() {
       <NavBar />
       <Routes>
        <Route path='/' element={<Home />} />
-       <Route path='/service' element={<Detail />} />
-       <Route path='/service/:id' element={<Detail />} />
+       <Route path='/detail' element={<Detail />} />
+       <Route path='/services' element={<Services />} />
+       <Route path='/detail/:id' element={<Detail />} />
        <Route path='/about' element={<About />} />
        <Route path='/contact' element={<Contact /> } />
        <Route path='/portfolio' element={<Portfolio /> } />

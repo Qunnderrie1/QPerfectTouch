@@ -31,7 +31,6 @@ const Content = () => {
             <div className='howBookingWorks container'>
             <h3 className='sectionTitle'>How Booking With Us Works </h3>
             <p className='sectionSubTitle'>Simple Steps to Secure Your Mobile Detailing Appointment</p>
-
             <div className='h-b-1-container'>
             <div className='h-b-1'>
               <FontAwesomeIcon icon={faCalendar} style={{fontSize: "32px"}} />
@@ -59,9 +58,11 @@ const Content = () => {
          <section className='whyChooseUsContainer'>
 
             <div className='whyChooseUs container'>
-            <h3 className='sectionTitle'>Why Choose Us?</h3>
-            <p className='sectionSubTitle'>Discover the Benefits of Choosing Our Mobile Detailing Services.</p>
+            <h3 className='whyChooseUsTitle'>Discover the Benefits of Choosing Our Mobile Detailing Services.</h3>
+            <div className='whyChooseUsContent'>
             <p className='whyChooseUsText'>At our mobile detailing service, we prioritize both quality and convenience. We offer comprehensive services including seat shampoo, carpet shampoo, full interior detailing, and basic interior and exterior cleaning—all tailored to leave your vehicle spotless and refreshed. What sets us apart is that we come to you, saving you time and hassle. Whether you’re at home or the office, we bring professional-grade tools and eco-friendly products right to your location, ensuring exceptional results without disrupting your day. Choose us for a convenient, thorough, and reliable detailing experience.</p>
+            <img className='whyChooseUsImage' src='./seats1.jpg' />
+            </div>
             </div>
 
         </section>

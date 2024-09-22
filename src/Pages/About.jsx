@@ -1,13 +1,16 @@
 import React from "react";
 import QuoteForm from "../Components/QuoteForm";
+
+
 const About = () => {
+
   return (
     <div className="aboutContainer ">
       <div className="pageTitleContainer">
         <div className="pageTitleBackgroundCover"></div>
         <div className="pageTextContainer container">
-          <h2 className="pageTitle">About Us</h2>
-          <h3 className="pageSubTitle">Learn More About Q Perfect Touch Mobile Detailing</h3>
+          <h2 className="pageTitle">Q Perfect Touch</h2>
+          <h3 className="pageSubTitle">About Us</h3>
         </div>
       </div>
       <div className="aboutContent container">
