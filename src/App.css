@@ -426,7 +426,6 @@ textarea{
 .detailDescriptionTitle{
   font-size: 30px;
   text-align: left;
-  padding: 0px 0px 0px 0px;
   font-weight: bold;
 }
 .detailPriceText{
@@ -434,7 +433,7 @@ textarea{
   font-weight: lighter;
 }
 .descriptionContent{
-  padding: 0px 0px 0px 20px; 
+  padding: 0px 0px 0px 0px; 
   text-align: left;
   line-height: 34px;
   font-weight: lighter;

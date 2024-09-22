@@ -15,7 +15,7 @@ const NavBar = () => {
             <div className='nav-items'>
                 <Link to='/'>HOME</Link>
                 <Link to='/services'>SERVICES</Link>
-                <Link to='/portfolio'>PORTFOLIO</Link>
+                <Link to='/portfolio'>OUR WORK</Link>
                 <Link to='/about'>ABOUT</Link>
                 <Link to='/contact'>CONTACT</Link>
             </div>

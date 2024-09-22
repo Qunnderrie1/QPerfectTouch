@@ -24,26 +24,9 @@ const Detail = () => {
         })
       }
 
-      <div className='detailPriceContainer'>
+      <div className='detailPriceContainer container'>
 
-        <div className='detailContent container'>
-          <div className='detailImgContainer'>
-          </div>
-          <div className='detailDescriptionContainer'>
-            {
-              data.map((item) => {
-                if(item.id == id){
-                  return <div className='descriptionContent'>
-                    <p className='detailDescriptionTitle'>{item.subTitle}</p>
-                    <hr />
-                    <p>{item.description}</p>
-                    <img src={item.imgURL} width="100%" height="100%" />
-                       </div>
-                }
-              })
-            }
-          </div>
-        </div>
+    
       </div>
     
     </div>
