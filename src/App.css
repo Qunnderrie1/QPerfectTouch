@@ -193,7 +193,7 @@ nav{
 .card{
   width: 300px;
   transition: 0.3s;
-  height: 450px;
+  height: fit-content;
   color: rgb(0, 0, 0);
   position: relative;
   z-index: 2;
@@ -329,7 +329,7 @@ nav{
 
 .pageTitleContainer{
   display: flex;
-  background-image: url('../public/car1.jpg');
+  background-image: url('./images/car1.jpg');
   background-size: cover;
   height: 250px;
   color: white;

@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "homepage": "https://Qunnderrie1.github.io/QPerfectTouch",
+  "homepage": "https://Qunnderrie1.github.io/QPerfectTouch/",
   "proxy" : "http://localhost:3001",
   "private": true,
   "dependencies": {

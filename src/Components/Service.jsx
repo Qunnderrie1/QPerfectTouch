@@ -12,6 +12,7 @@ const Service = () => {
         {
             data ? data.map((item) => {
                 return <ServiceCards
+                 altText={item.name}
                  img={item.imgURL}
                  id={item.id}
                  title={item.name}

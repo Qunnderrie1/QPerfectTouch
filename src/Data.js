@@ -8,7 +8,7 @@ const services = [
         subTitle: "Restore Your Seats",
         description: "The process of shampooing car seats begins with a thorough vacuuming to remove any loose dirt and debris. Next, we apply a specialized upholstery cleaner to the seats, working it into the fabric to lift stains and grime. After allowing the cleaner to penetrate, we use a steam cleaner or upholstery brush to agitate the fabric and extract dirt. Finally, we rinse and dry the seats, ensuring they are refreshed and revitalized, leaving your car's interior looking and smelling like new! ",
         price: 100,
-        imgURL: "./seat2.jpg"
+        imgURL: "./images/car1.jpg"
 
     },
     {
